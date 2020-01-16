@@ -1,0 +1,101 @@
+---
+title: Chicklet plots with {ggchicket}
+author: cgpu
+date: '2020-01-16'
+slug: chicklet-plots-with-ggchicket
+categories:
+  - R
+tags:
+  - ggplot
+  - Rstats
+authors: []
+mathjax: true
+---
+
+
+
+<div id="customises-rough-around-the-dges-barplots-with-ggchicklet" class="section level1">
+<h1>Customises rough around the dges barplots with <code>{ggchicklet}</code></h1>
+<p><span class="math display">\[\begin{align}
+    r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
+\end{align}\]</span></p>
+<pre class="r"><code>library(ggplot2)
+library(plotly)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;plotly&#39;</code></pre>
+<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
+## 
+##     last_plot</code></pre>
+<pre><code>## The following object is masked from &#39;package:stats&#39;:
+## 
+##     filter</code></pre>
+<pre><code>## The following object is masked from &#39;package:graphics&#39;:
+## 
+##     layout</code></pre>
+<pre class="r"><code>library(dplyr)</code></pre>
+<pre><code>## 
+## Attaching package: &#39;dplyr&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:stats&#39;:
+## 
+##     filter, lag</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     intersect, setdiff, setequal, union</code></pre>
+<pre class="r"><code>library(ggchicklet)
+
+movies &lt;- read.csv(&quot;https://raw.githubusercontent.com/cgpu/12-12-2019-ggplot2-workshop/master/exercises/data/movie_metadata.csv&quot;)
+
+movies_actors &lt;- movies%&gt;%
+    group_by(aktor=actor_1_name)%&gt;%
+    summarise(ilosc=n())%&gt;%
+    arrange(desc(ilosc))%&gt;%
+    head(15)
+
+ 
+ggplt &lt;- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc), 
+                                     y     =  ilosc,
+                                     fill  =  ilosc)) +
+    
+            geom_chicklet(size   = 0.30,
+                          width   = 0.85,
+                          radius = unit(0.30, &quot;cm&quot;))  +
+
+            theme(text              = element_text(           color = &quot;#4A637B&quot;, face = &quot;bold&quot;, family = &#39;Helvetica&#39;)
+                  ,plot.caption     = element_text(size =  9, color = &quot;#8d99ae&quot;, face = &quot;plain&quot;                     ) 
+                  ,plot.title       = element_text(size = 18, color = &quot;#2b2d42&quot;, face = &quot;bold&quot;, hjust=0.15          )
+                  ,axis.text.y      = element_text(size = 10, color = &quot;#8d99ae&quot;, face = &quot;bold&quot;, hjust=1.1           )
+                  ,axis.title.x     = element_text(size = 14 ,                                  hjust = 0.15        )
+                  ,axis.text.x      = element_blank()
+                  ,axis.title.y     = element_blank()
+                  ,axis.ticks.x     = element_blank()
+                  ,axis.ticks.y     = element_blank()
+                  ,plot.margin      = unit(c(1,1,1,1),&quot;cm&quot;)
+                  ,panel.background = element_blank()
+                  ,legend.position  = &quot;none&quot;
+                  ,aspect.ratio     = 0.75) + 
+
+            scale_fill_gradient2(midpoint  = mean(movies_actors$ilosc) - 2,
+                                  low      = &quot;#4974a5&quot;,
+                                  mid      = &quot;#4A637B&quot;,
+                                  high     = &quot;#f35f71&quot;,
+                                  space    = &quot;Lab&quot; ) +
+                
+            scale_size_continuous(range = c(3,5)) +
+            
+            coord_flip() +
+                
+            geom_text(aes(label = ilosc, 
+                          size  = ilosc),
+                      color     = &quot;white&quot;,
+                      nudge_y   = -2.5,
+                      family    = &#39;Helvetica&#39;) +
+            
+            labs(title   = &quot; Actors with most starring roles\n&quot;,
+                 caption = &quot;\nsource: Spotkania Entuzjastów R-Warsaw RUG Meetup&quot;,
+                     y   = &quot;\nNumber of starring roles&quot;)
+
+
+
+ggplt</code></pre>
+<p><img src="/post/2020-01-16-chicklet-plots-with-ggchicket_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+</div>

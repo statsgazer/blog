@@ -21,7 +21,7 @@
 Main menu is located at the top of the site.
 Check Hugo&#39;s Menus Documentation for information about managing this menu.
 You can hide the Main Menu using the following option in your config.toml file:
-[params.settings] hideMainMenu = true Sidebar Menu name: sidebar
+1 2  [params.settings] hideMainMenu = true   Sidebar Menu name: sidebar
 Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget Area to use it.</description>
     </item>
     

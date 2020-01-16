@@ -22,7 +22,7 @@ enableEmoji = true
 defaultContentLanguage = "en"
 
 [params.info]
-description = "Mostly hexagon stickers. Some #Rstats"
+description = "Mostly hexstickers. Some #Rstats"
 title404 = "Nothing's here!"
 
 [params.assets]
@@ -142,3 +142,16 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
+
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ""
+    lineNoStart = 1
+    lineNos = true
+    lineNumbersInTable = true
+    noClasses = true
+    style = "dracula"
+    tabWidth = 4

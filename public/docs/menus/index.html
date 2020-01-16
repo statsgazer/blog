@@ -7,7 +7,7 @@
 Main menu is located at the top of the site.
 Check Hugo&#39;s Menus Documentation for information about managing this menu.
 You can hide the Main Menu using the following option in your config.toml file:
-[params.settings] hideMainMenu = true Sidebar Menu name: sidebar
+1 2  [params.settings] hideMainMenu = true   Sidebar Menu name: sidebar
 Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget Area to use it.'>
 <meta name='theme-color' content='#f35948'>
 
@@ -17,7 +17,7 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
 Main menu is located at the top of the site.
 Check Hugo&#39;s Menus Documentation for information about managing this menu.
 You can hide the Main Menu using the following option in your config.toml file:
-[params.settings] hideMainMenu = true Sidebar Menu name: sidebar
+1 2  [params.settings] hideMainMenu = true   Sidebar Menu name: sidebar
 Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget Area to use it.'>
 <meta property='og:url' content='/docs/menus/'>
 <meta property='og:site_name' content='stats::gazeR'>
@@ -57,7 +57,7 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
       </a>
     </h2>
     <div class='desc'>
-    Mostly hexagon stickers. Some #Rstats
+    Mostly hexstickers. Some #Rstats
     </div>
   </header>
 
@@ -107,6 +107,8 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
       </li><li>
         <a href='/tags/fuse.js/' style='font-size:1em'>fuse.js</a>
       </li><li>
+        <a href='/tags/ggplot/' style='font-size:1em'>ggplot</a>
+      </li><li>
         <a href='/tags/i18n/' style='font-size:1em'>i18n</a>
       </li><li>
         <a href='/tags/katex/' style='font-size:1em'>katex</a>
@@ -124,6 +126,8 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
         <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
       </li><li>
         <a href='/tags/regression/' style='font-size:1em'>regression</a>
+      </li><li>
+        <a href='/tags/rstats/' style='font-size:1em'>Rstats</a>
       </li><li>
         <a href='/tags/search/' style='font-size:1.5em'>search</a>
       </li><li>
@@ -187,7 +191,7 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexagon stickers. Some #Rstats</p>
+          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexstickers. Some #Rstats</p>
           </div>
         </div>
       </header>
@@ -272,29 +276,66 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
 <p>Main menu is located at the top of the site.</p>
 <p>Check <a href="https://gohugo.io/content-management/menus/">Hugo's Menus Documentation</a> for information about managing this menu.</p>
 <p>You can hide the Main Menu using the following option in your <code>config.toml</code> file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">settings</span>]
-<span style="color:#a6e22e">hideMainMenu</span> = <span style="color:#66d9ef">true</span>
-</code></pre></div><h2 id="sidebar-menu">Sidebar Menu</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.settings]
+hideMainMenu = <span style="color:#ff79c6">true</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="sidebar-menu">Sidebar Menu</h2>
 <p><strong>name</strong>: <code>sidebar</code></p>
 <p>Social Menu is available as Widget: <code>sidebar_menu</code>. Add it to the <code>sidebar</code> <a href="/docs/widgets/#available-widget-areas">Widget Area</a> to use it.</p>
 <p>You can use Sidebar Menu as normal <a href="https://gohugo.io/content-management/menus/">Hugo Menus</a>.</p>
 <p>Or you can use it to mirror another menu by using the <code>sidebar_menu.mirror</code> option in your <a href="/docs/widgets/#widgets-configuration-file">Widgets Configuration File</a>. For example, this will mirror the Main Menu:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">sidebar_menu</span>]
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[sidebar_menu]
 ...
-<span style="color:#a6e22e">mirror</span> = <span style="color:#e6db74">&#34;main&#34;</span>
-</code></pre></div><p>The sidebar menu can display nested menus. The sub-pages need to have a page as <code>parent</code> defined in the page's front matter:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">menu:
+mirror = <span style="color:#f1fa8c">&#34;main&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>The sidebar menu can display nested menus. The sub-pages need to have a page as <code>parent</code> defined in the page's front matter:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">menu:
    main:
       parent: myParentPage
-</code></pre></div><h2 id="social-menu">Social Menu</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="social-menu">Social Menu</h2>
 <p>Social Menu is available as Widget: <code>social_menu</code>. You can add it to <a href="/docs/widgets/#available-widget-areas">Widget Areas</a> to use it.</p>
 <p>Use the variables under <code>[params.social]</code> in your <code>config.toml</code> file for adding your social profiles:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">social</span>]
-<span style="color:#a6e22e">codepen</span> = <span style="color:#e6db74">&#34;...&#34;</span>
-<span style="color:#a6e22e">email</span> = <span style="color:#e6db74">&#34;...&#34;</span>
-<span style="color:#a6e22e">facebook</span> = <span style="color:#e6db74">&#34;...&#34;</span>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.social]
+codepen = <span style="color:#f1fa8c">&#34;...&#34;</span>
+email = <span style="color:#f1fa8c">&#34;...&#34;</span>
+facebook = <span style="color:#f1fa8c">&#34;...&#34;</span>
 ...
-</code></pre></div><p>You only have to add your usernames. Minimo will take care of the rest.</p>
+</code></pre></td></tr></table>
+</div>
+</div><p>You only have to add your usernames. Minimo will take care of the rest.</p>
 <h4 id="changing-social-menu-icons-order">Changing Social Menu Icons Order</h4>
 <p>If you want to change the order of the social menu icons, use the <code>social_menu.platforms</code> option in your <a href="/docs/widgets/#widgets-configuration-file">Widgets Configuration File</a>.</p>
 <p>The social menu icons will appear in the order you specify in the <code>platforms</code> array.</p>
@@ -388,3 +429,7 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
 
 </html>
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

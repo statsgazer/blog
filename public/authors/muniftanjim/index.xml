@@ -29,7 +29,7 @@ Heading 4  First item Second item   Nested unordered item  Third item Nested ord
       <guid>/docs/katex-support/</guid>
       <description>KaTeX Syntax for Markdown In your Markdown content, use the katex shortcode for inserting KaTeX. Check documentation for Shortcode: katex.
 Here&#39;s an example Markdown content:
-When {{&amp;lt; katex inline &amp;gt;}} a \ne 0 {{&amp;lt; /katex &amp;gt;}}, there are two solutions to {{&amp;lt; katex &amp;gt;}} ax^2 + bx + c = 0 {{&amp;lt; /katex &amp;gt;}} and they are: {{&amp;lt; katex &amp;gt;}} x = {-b \pm \sqrt{b^2-4ac} \over 2a} {{&amp;lt; /katex &amp;gt;}} Output:</description>
+1 2 3 4 5 6 7 8 9  When {{&amp;lt; katex inline &amp;gt;}} a \ne 0 {{&amp;lt; /katex &amp;gt;}}, there are two solutions to {{&amp;lt; katex &amp;gt;}} ax^2 + bx + c = 0 {{&amp;lt; /katex &amp;gt;}} and they are: {{&amp;lt; katex &amp;gt;}} x = {-b \pm \sqrt{b^2-4ac} \over 2a} {{&amp;lt; /katex &amp;gt;}}   Output:</description>
     </item>
     
     <item>
@@ -39,7 +39,7 @@ When {{&amp;lt; katex inline &amp;gt;}} a \ne 0 {{&amp;lt; /katex &amp;gt;}}, th
       
       <guid>/docs/search-fuse-js/</guid>
       <description>Configure Fuse.js Search Client Select Fuse.js as the search client in your config.toml file:
-[params.search] client = &amp;#34;fuse&amp;#34; </description>
+1 2  [params.search] client = &amp;#34;fuse&amp;#34;   </description>
     </item>
     
     <item>
@@ -49,8 +49,8 @@ When {{&amp;lt; katex inline &amp;gt;}} a \ne 0 {{&amp;lt; /katex &amp;gt;}}, th
       
       <guid>/docs/search-algolia/</guid>
       <description>Configure Algolia Search Client Select Algolia as the search client in your config.toml file:
-[params.search] client = &amp;#34;algolia&amp;#34; Also, add configuration options for Algolia:
-[params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;  params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
+1 2  [params.search] client = &amp;#34;algolia&amp;#34;   Also, add configuration options for Algolia:
+1 2 3 4  [params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;    params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
 default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#39;ll find various information related to your Algolia account in the Algolia Dashboard.</description>
     </item>
     
@@ -61,7 +61,7 @@ default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#
       
       <guid>/docs/search-lunr-js/</guid>
       <description>Configure Lunr.js Search Client Select Lunr.js as the search client in your config.toml file:
-[params.search] client = &amp;#34;lunr&amp;#34; Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
+1 2  [params.search] client = &amp;#34;lunr&amp;#34;   Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
 Minimo comes with a script for generating the search index for Lunr.js: /scripts/generate-search-index-lunr.js.
 Install Dependencies Node.js must be installed on your system for using the generator script.</description>
     </item>
@@ -87,8 +87,8 @@ Create a markdown file under /content/page/ directory with the filename search. 
       <guid>/docs/comments-support/</guid>
       <description>Minimo has support for comments baked into it.
 Enable/Disable Comments Globally For enabling or disabling comments globally, check the following setting in your config.toml file:
-[params.comments] enable = false  params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
---- comments: true ---  comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).</description>
+1 2  [params.comments] enable = false    params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
+1 2 3  --- comments: true ---    comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).</description>
     </item>
     
     <item>
@@ -98,10 +98,9 @@ Enable/Disable Comments Globally For enabling or disabling comments globally, ch
       
       <guid>/docs/emoji-support/</guid>
       <description>First of all, if you really want emojis, set the enableEmoji setting to true in your config.toml file:
-enableEmoji = true This will enable Hugo to find Emoji Shorthands in your content files and render them as Unicode Emoji Characters.
+1  enableEmoji = true   This will enable Hugo to find Emoji Shorthands in your content files and render them as Unicode Emoji Characters.
 For example:
-No, it&#39;ll probably not be that colorful! Unless your device&#39;s operating system natively supports colorful emojis, you will see a black &amp;amp; white one instead. 🔥
-✏ For getting that colorful look, you will have to add this to your content&#39;s frontmatter:</description>
+No, it&#39;ll probably not be that colorful! Unless your device&#39;s operating system natively supports colorful emojis, you will see a black &amp;amp; white one instead.</description>
     </item>
     
     <item>
@@ -111,10 +110,10 @@ No, it&#39;ll probably not be that colorful! Unless your device&#39;s operating 
       
       <guid>/docs/mathjax-support/</guid>
       <description>For enabling MathJax, add this to your content&#39;s frontmatter:
---- mathjax: true --- MathJax Syntax for Markdown In your Markdown content, use \\(&amp;hellip;\\) delimiters for in-line mathematics.
+1 2 3  --- mathjax: true ---   MathJax Syntax for Markdown In your Markdown content, use \\(&amp;hellip;\\) delimiters for in-line mathematics.
 For mathematics blocks you can use either $$&amp;hellip;$$ or \\[&amp;hellip;\\] as delimiters.
 Here&#39;s an example Markdown content:
-When \\( a \ne 0 \\), there are two solutions to $$ ax^2 + bx + c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\] Output:</description>
+1 2 3 4 5 6 7  When \\( a \ne 0 \\), there are two solutions to $$ ax^2 + bx + c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]   Output:</description>
     </item>
     
     <item>
@@ -124,7 +123,7 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 + bx + c = 0 $$ and the
       
       <guid>/docs/sidebar/</guid>
       <description>Enabling Sidebar For enabling Sidebar, use the following configuration options in your config.toml file:
-[params.sidebar] enable = true  params.sidebar [Map]:  enable [Boolean]: Switch for enabling sidebar    Adding Widgets to Sidebar For adding Widgets to the Sidebar, check the Widgets documentation.</description>
+1 2  [params.sidebar] enable = true    params.sidebar [Map]:  enable [Boolean]: Switch for enabling sidebar    Adding Widgets to Sidebar For adding Widgets to the Sidebar, check the Widgets documentation.</description>
     </item>
     
     <item>
@@ -147,9 +146,9 @@ Widget: About  about [Map]:  title [String]: Title</description>
       <guid>/docs/shortcodes/</guid>
       <description>Minimo comes with several shortcodes built-in.
  Shortcode: center Center align you content.
-center: Parameters  Markdown content between opening and closing tags.  center: Usage Example {{&amp;lt; center &amp;gt;}} _Center Aligned Text_ {{&amp;lt; /center &amp;gt;}} Output:
+center: Parameters  Markdown content between opening and closing tags.  center: Usage Example 1 2 3  {{&amp;lt; center &amp;gt;}} _Center Aligned Text_ {{&amp;lt; /center &amp;gt;}}   Output:
 Center Aligned Text   Shortcode: convo Renders conversation blocks.
-convo: Parameters  sep [String] (optional): seperator between person and text (default: &amp;ldquo;:&amp;rdquo;)  convo: Inner Syntax person :: text You can remove the person part, if you want.</description>
+convo: Parameters  sep [String] (optional): seperator between person and text (default: &amp;ldquo;:&amp;rdquo;)  convo: Inner Syntax 1  person :: text   You can remove the person part, if you want.</description>
     </item>
     
     <item>
@@ -160,8 +159,8 @@ convo: Parameters  sep [String] (optional): seperator between person and text (d
       <guid>/docs/cover-image/</guid>
       <description>You can add cover image to your contents with the cover paramameter in the content&#39;s front-matter.
 You can directly provide the image url:
---- cover: /images/eden-farm-children-s-village.jpg ---  cover [String]: path/url of the cover image  Or you can provide additional information:
---- cover: image: /images/eden-farm-children-s-village.jpg alternate: Picture of a yellow wall with a blue window in the upper-left corner caption: Eden Farm Children&amp;#39;s Village by Gareth Harper on Unsplash style: full ---  cover [Map]:  image [String]: path/url of the cover image alternate [String]: alternate text for the image caption [String]: caption for the cover image style [String]: full / wide / normal    </description>
+1 2 3  --- cover: /images/eden-farm-children-s-village.jpg ---    cover [String]: path/url of the cover image  Or you can provide additional information:
+1 2 3 4 5 6 7  --- cover: image: /images/eden-farm-children-s-village.jpg alternate: Picture of a yellow wall with a blue window in the upper-left corner caption: Eden Farm Children&amp;#39;s Village by Gareth Harper on Unsplash style: full ---    cover [Map]:  image [String]: path/url of the cover image alternate [String]: alternate text for the image caption [String]: caption for the cover image style [String]: full / wide / normal    </description>
     </item>
     
     <item>
@@ -172,9 +171,8 @@ You can directly provide the image url:
       <guid>/docs/translation/</guid>
       <description>You can translate Minimo in your own language!
 For example, if you want to translate Minimo in Spanish, you will have to add this to your site&#39;s config file:
-[languages.es] lang = &amp;#34;es&amp;#34; languageName = &amp;#34;Spanish&amp;#34; weight = 1 Then create a folder named /i18n/ in your site&#39;s root. And create a file /i18n/es.toml with the translated strings.
-For reference template you can see the en.toml file.
-If you want your translation file to be included in Minimo repository, feel free to create a pull request.</description>
+1 2 3 4  [languages.es] lang = &amp;#34;es&amp;#34; languageName = &amp;#34;Spanish&amp;#34; weight = 1   Then create a folder named /i18n/ in your site&#39;s root. And create a file /i18n/es.toml with the translated strings.
+For reference template you can see the en.</description>
     </item>
     
     <item>
@@ -198,7 +196,7 @@ For detailed information about Syntax Highlighting in Hugo, check the Hugo&#39;s
 Main menu is located at the top of the site.
 Check Hugo&#39;s Menus Documentation for information about managing this menu.
 You can hide the Main Menu using the following option in your config.toml file:
-[params.settings] hideMainMenu = true Sidebar Menu name: sidebar
+1 2  [params.settings] hideMainMenu = true   Sidebar Menu name: sidebar
 Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget Area to use it.</description>
     </item>
     
@@ -210,7 +208,7 @@ Social Menu is available as Widget: sidebar_menu. Add it to the sidebar Widget A
       <guid>/docs/opengraph/</guid>
       <description>Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&amp;rsquo; front-matters &amp;amp; Hugo configuration.
 You can use these options in you content&#39;s front-matter:
---- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
+1 2 3 4 5  --- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---    audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
     </item>
     
     <item>
@@ -220,11 +218,9 @@ You can use these options in you content&#39;s front-matter:
       
       <guid>/docs/authors/</guid>
       <description>Minimo supports multiple authors for your site. Just make sure you have the following configuration in your site&#39;s config.toml:
-[taxonomies] author = &amp;#34;authors&amp;#34; Minimo treats Authors as a Hugo Taxonomy.
+1 2  [taxonomies] author = &amp;#34;authors&amp;#34;   Minimo treats Authors as a Hugo Taxonomy.
 Author&#39;s Profile For adding an author to your site:
- Create data/authors folder in your site&#39;s root directory Create a file with the filename format: &amp;lt;username&amp;gt;.toml  Now, add information about the author using the structure below:
-/data/authors/muniftanjim.toml
-id = &amp;#34;muniftanjim&amp;#34; [email] username = &amp;#34;muniftanjim&amp;#34; host = &amp;#34;gmail.</description>
+ Create data/authors folder in your site&#39;s root directory Create a file with the filename format: &amp;lt;username&amp;gt;.toml  Now, add information about the author using the structure below:</description>
     </item>
     
     <item>
@@ -234,7 +230,7 @@ id = &amp;#34;muniftanjim&amp;#34; [email] username = &amp;#34;muniftanjim&amp;#
       
       <guid>/docs/config-file/</guid>
       <description>This is the Minimo&#39;s configuration file ( config.toml ) file of this site:
-baseURL = &amp;#34;http://www.example.com&amp;#34; title = &amp;#34;stats::gazeR&amp;#34; # for smart copyright line, leave this blank and check [params.copyright] copyright = &amp;#34;&amp;#34; theme = &amp;#34;minimo&amp;#34; disqusShortname = &amp;#34;&amp;#34; googleAnalytics = &amp;#34;&amp;#34; Paginate = 8 preserveTaxonomyNames = true enableRobotsTXT = true # generate robots.txt # Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ ) pygmentsCodefences = true enableEmoji = true # Missing translations will default to this content language defaultContentLanguage = &amp;#34;en&amp;#34; [params.</description>
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 72 73 74 75 76 77 78 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 98 99 100 101 102 103 104 105 106 107 108 109 110 111 112 113 114 115 116 117 118 119 120 121 122 123 124 125 126 127 128 129 130 131 132 133 134 135 136 137 138 139 140 141 142 143 144 145 146 147 148 149 150 151 152 153 154 155 156 157  baseURL = &amp;#34;http://www.</description>
     </item>
     
     <item>
@@ -244,8 +240,8 @@ baseURL = &amp;#34;http://www.example.com&amp;#34; title = &amp;#34;stats::gazeR
       
       <guid>/docs/updating/</guid>
       <description>Updating Minimo Update Minimo clone Just replace the themes/minimo folder with the latest version of Minimo clone, i.e. delete the old folder and clone again:
-rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo Then, commit the changes:
-git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; Update Minimo submodule cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd ../.. git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; To Do After Updating Minimo After updating Minimo, always check that your site&#39;s config.</description>
+1 2  rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo   Then, commit the changes:
+1 2  git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34;   Update Minimo submodule 1 2 3 4 5 6  cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd .</description>
     </item>
     
     <item>

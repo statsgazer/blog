@@ -3,18 +3,18 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='For enabling MathJax, add this to your content&#39;s frontmatter:
---- mathjax: true --- MathJax Syntax for Markdown In your Markdown content, use \\(&hellip;\\) delimiters for in-line mathematics.
+1 2 3  --- mathjax: true ---   MathJax Syntax for Markdown In your Markdown content, use \\(&hellip;\\) delimiters for in-line mathematics.
 For mathematics blocks you can use either $$&hellip;$$ or \\[&hellip;\\] as delimiters.
 Here&#39;s an example Markdown content:
-When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\] Output:'>
+1 2 3 4 5 6 7  When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]   Output:'>
 <meta name='theme-color' content='#f35948'>
 
 <meta property='og:title' content='MathJax Support • Munif Tanjim'>
 <meta property='og:description' content='For enabling MathJax, add this to your content&#39;s frontmatter:
---- mathjax: true --- MathJax Syntax for Markdown In your Markdown content, use \\(&hellip;\\) delimiters for in-line mathematics.
+1 2 3  --- mathjax: true ---   MathJax Syntax for Markdown In your Markdown content, use \\(&hellip;\\) delimiters for in-line mathematics.
 For mathematics blocks you can use either $$&hellip;$$ or \\[&hellip;\\] as delimiters.
 Here&#39;s an example Markdown content:
-When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\] Output:'>
+1 2 3 4 5 6 7  When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$ and they are: \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]   Output:'>
 <meta property='og:url' content='/docs/mathjax-support/'>
 <meta property='og:site_name' content='stats::gazeR'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/058944a54775b387da964cb3cc3670ff?s=256'><meta property='article:author' content='https://facebook.com/MunifTanjim'><meta property='article:section' content='docs'><meta property='article:tag' content='config'><meta property='article:published_time' content='2018-02-27T18:00:00&#43;06:00'/><meta property='article:modified_time' content='2019-09-28T21:00:00&#43;06:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@MunifTanjim'>
@@ -53,7 +53,7 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$
       </a>
     </h2>
     <div class='desc'>
-    Mostly hexagon stickers. Some #Rstats
+    Mostly hexstickers. Some #Rstats
     </div>
   </header>
 
@@ -103,6 +103,8 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$
       </li><li>
         <a href='/tags/fuse.js/' style='font-size:1em'>fuse.js</a>
       </li><li>
+        <a href='/tags/ggplot/' style='font-size:1em'>ggplot</a>
+      </li><li>
         <a href='/tags/i18n/' style='font-size:1em'>i18n</a>
       </li><li>
         <a href='/tags/katex/' style='font-size:1em'>katex</a>
@@ -120,6 +122,8 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$
         <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
       </li><li>
         <a href='/tags/regression/' style='font-size:1em'>regression</a>
+      </li><li>
+        <a href='/tags/rstats/' style='font-size:1em'>Rstats</a>
       </li><li>
         <a href='/tags/search/' style='font-size:1.5em'>search</a>
       </li><li>
@@ -183,7 +187,7 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexagon stickers. Some #Rstats</p>
+          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexstickers. Some #Rstats</p>
           </div>
         </div>
       </header>
@@ -241,21 +245,43 @@ When \\( a \ne 0 \\), there are two solutions to $$ ax^2 &#43; bx &#43; c = 0 $$
 
   <div class='container entry-content'>
   <p>For enabling MathJax, add this to your content's frontmatter:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-mathjax: <span style="color:#66d9ef">true</span>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+mathjax: <span style="color:#ff79c6">true</span>
 ---
-</code></pre></div><h2 id="mathjax-syntax-for-markdown">MathJax Syntax for Markdown</h2>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="mathjax-syntax-for-markdown">MathJax Syntax for Markdown</h2>
 <p>In your Markdown content, use <code>\\(</code>&hellip;<code>\\)</code> delimiters for in-line mathematics.</p>
 <p>For mathematics blocks you can use either <code>$$</code>&hellip;<code>$$</code> or <code>\\[</code>&hellip;<code>\\]</code> as delimiters.</p>
 <p><strong>Here's an example Markdown content:</strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">When \\( a \ne 0 \\), there are two solutions to
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">When \\( a \ne 0 \\), there are two solutions to
 
 $$ ax^2 + bx + c = 0 $$
 
 and they are:
 
 \\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
-</code></pre></div><p><strong>Output:</strong></p>
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>Output:</strong></p>
 <p>When \( a \ne 0 \), there are two solutions to</p>
 <p>$$ ax^2 + bx + c = 0 $$</p>
 <p>and they are:</p>
@@ -264,14 +290,27 @@ and they are:
 <p>You can customize the default behavior of MathJax if you want.</p>
 <p>Minimo picks up configuration for MathJax from the <strong><code>/data/config/mathjax.json</code></strong> file.</p>
 <p>The default configuration options look like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;library&#34;</span>: {
-    <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;//unpkg.com/mathjax@2.7.5/MathJax.js&#34;</span>,
-    <span style="color:#f92672">&#34;config&#34;</span>: <span style="color:#e6db74">&#34;TeX-MML-AM_CHTML&#34;</span>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#ff79c6">&#34;library&#34;</span>: {
+    <span style="color:#ff79c6">&#34;path&#34;</span>: <span style="color:#f1fa8c">&#34;//unpkg.com/mathjax@2.7.5/MathJax.js&#34;</span>,
+    <span style="color:#ff79c6">&#34;config&#34;</span>: <span style="color:#f1fa8c">&#34;TeX-MML-AM_CHTML&#34;</span>
   },
-  <span style="color:#f92672">&#34;config&#34;</span>: {}
+  <span style="color:#ff79c6">&#34;config&#34;</span>: {}
 }
-</code></pre></div><ul>
+</code></pre></td></tr></table>
+</div>
+</div><ul>
 <li><code>library</code> [<code>Object</code>]:
 <ul>
 <li><code>path</code> [<code>String</code>]: URL for the main <strong><em>MathJax.js</em></strong> file.</li>
@@ -291,19 +330,37 @@ and they are:
 <li>Start hacking</li>
 </ul>
 <p>For exmaple, if you want to enable <code>$</code>&hellip;<code>$</code> delimiters for in-line mathematics, you probably want something like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
-  <span style="color:#f92672">&#34;library&#34;</span>: {
-    <span style="color:#f92672">&#34;path&#34;</span>: <span style="color:#e6db74">&#34;//unpkg.com/mathjax@2.7.5/MathJax.js&#34;</span>,
-    <span style="color:#f92672">&#34;config&#34;</span>: <span style="color:#e6db74">&#34;TeX-MML-AM_CHTML&#34;</span>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#ff79c6">&#34;library&#34;</span>: {
+    <span style="color:#ff79c6">&#34;path&#34;</span>: <span style="color:#f1fa8c">&#34;//unpkg.com/mathjax@2.7.5/MathJax.js&#34;</span>,
+    <span style="color:#ff79c6">&#34;config&#34;</span>: <span style="color:#f1fa8c">&#34;TeX-MML-AM_CHTML&#34;</span>
   },
-  <span style="color:#f92672">&#34;config&#34;</span>: {
-    <span style="color:#f92672">&#34;tex2jax&#34;</span>: {
-      <span style="color:#f92672">&#34;inlineMath&#34;</span>: [[<span style="color:#e6db74">&#34;$&#34;</span>, <span style="color:#e6db74">&#34;$&#34;</span>], [<span style="color:#e6db74">&#34;\\(&#34;</span>, <span style="color:#e6db74">&#34;\\)&#34;</span>]],
-      <span style="color:#f92672">&#34;processEscapes&#34;</span>: <span style="color:#66d9ef">true</span>
+  <span style="color:#ff79c6">&#34;config&#34;</span>: {
+    <span style="color:#ff79c6">&#34;tex2jax&#34;</span>: {
+      <span style="color:#ff79c6">&#34;inlineMath&#34;</span>: [[<span style="color:#f1fa8c">&#34;$&#34;</span>, <span style="color:#f1fa8c">&#34;$&#34;</span>], [<span style="color:#f1fa8c">&#34;\\(&#34;</span>, <span style="color:#f1fa8c">&#34;\\)&#34;</span>]],
+      <span style="color:#ff79c6">&#34;processEscapes&#34;</span>: <span style="color:#ff79c6">true</span>
     }
   }
 }
-</code></pre></div><h3 id="notice">Notice</h3>
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="notice">Notice</h3>
 <p>MathJax version above <code>2.7.5</code> is not guaranted to work.</p>
 <h4 id="related-guides">Related Guides</h4>
 <ul>
@@ -406,3 +463,7 @@ and they are:
 
 </html>
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

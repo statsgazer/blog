@@ -17,8 +17,8 @@
       
       <guid>/docs/updating/</guid>
       <description>Updating Minimo Update Minimo clone Just replace the themes/minimo folder with the latest version of Minimo clone, i.e. delete the old folder and clone again:
-rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo Then, commit the changes:
-git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; Update Minimo submodule cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd ../.. git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34; To Do After Updating Minimo After updating Minimo, always check that your site&#39;s config.</description>
+1 2  rm -rf themes/minimo git clone --depth 1 https://github.com/MunifTanjim/minimo themes/minimo   Then, commit the changes:
+1 2  git add themes/minimo git commit -m &amp;#34;update [theme]: minimo&amp;#34;   Update Minimo submodule 1 2 3 4 5 6  cd themes/minimo git checkout master git fetch &amp;amp;&amp;amp; git pull cd .</description>
     </item>
     
     <item>

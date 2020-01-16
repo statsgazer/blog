@@ -51,7 +51,7 @@ Widget: About  about [Map]:  title [String]: Title'>
       </a>
     </h2>
     <div class='desc'>
-    Mostly hexagon stickers. Some #Rstats
+    Mostly hexstickers. Some #Rstats
     </div>
   </header>
 
@@ -101,6 +101,8 @@ Widget: About  about [Map]:  title [String]: Title'>
       </li><li>
         <a href='/tags/fuse.js/' style='font-size:1em'>fuse.js</a>
       </li><li>
+        <a href='/tags/ggplot/' style='font-size:1em'>ggplot</a>
+      </li><li>
         <a href='/tags/i18n/' style='font-size:1em'>i18n</a>
       </li><li>
         <a href='/tags/katex/' style='font-size:1em'>katex</a>
@@ -118,6 +120,8 @@ Widget: About  about [Map]:  title [String]: Title'>
         <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
       </li><li>
         <a href='/tags/regression/' style='font-size:1em'>regression</a>
+      </li><li>
+        <a href='/tags/rstats/' style='font-size:1em'>Rstats</a>
       </li><li>
         <a href='/tags/search/' style='font-size:1.5em'>search</a>
       </li><li>
@@ -181,7 +185,7 @@ Widget: About  about [Map]:  title [String]: Title'>
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexagon stickers. Some #Rstats</p>
+          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexstickers. Some #Rstats</p>
           </div>
         </div>
       </header>
@@ -385,55 +389,116 @@ Widget: About  about [Map]:  title [String]: Title'>
 </tbody>
 </table>
 <p>You can add Widgets to Widget Areas from your <strong><code>config.toml</code></strong> file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">widgets</span>]
-<span style="color:#a6e22e">header</span> = [<span style="color:#e6db74">&#34;breadcrumbs&#34;</span>]
-<span style="color:#a6e22e">homepage</span> = [<span style="color:#e6db74">&#34;recent_posts&#34;</span>]
-<span style="color:#a6e22e">sidebar</span> = [<span style="color:#e6db74">&#34;about&#34;</span>,<span style="color:#e6db74">&#34;taxonomy_cloud&#34;</span>]
-<span style="color:#a6e22e">footer</span> = [<span style="color:#e6db74">&#34;social_menu&#34;</span>]
-</code></pre></div><p>The syntax for adding Widgets to Widget Areas is:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">widget_area_slug</span> = [ <span style="color:#a6e22e">widget_slug_1</span>, <span style="color:#a6e22e">widget_slug_2</span>, ...]
-</code></pre></div><h2 id="widgets-configuration-file">Widgets Configuration File</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.widgets]
+header = [<span style="color:#f1fa8c">&#34;breadcrumbs&#34;</span>]
+homepage = [<span style="color:#f1fa8c">&#34;recent_posts&#34;</span>]
+sidebar = [<span style="color:#f1fa8c">&#34;about&#34;</span>,<span style="color:#f1fa8c">&#34;taxonomy_cloud&#34;</span>]
+footer = [<span style="color:#f1fa8c">&#34;social_menu&#34;</span>]
+</code></pre></td></tr></table>
+</div>
+</div><p>The syntax for adding Widgets to Widget Areas is:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">widget_area_slug = [ widget_slug_1, widget_slug_2, ...]
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="widgets-configuration-file">Widgets Configuration File</h2>
 <p>Minimo picks up Widgets&rsquo; configuration from the <strong><code>/data/config/widgets.toml</code></strong> file.</p>
 <p>Here's the <em>Widgets Config file</em> for this site:</p>
 <p><strong><code>/data/config/widgets.toml</code></strong></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#75715e"># About Widget config</span>
-[<span style="color:#a6e22e">about</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>                            <span style="color:#75715e"># default: .Site.Title</span>
-<span style="color:#a6e22e">description</span> = <span style="color:#e6db74">&#34;&#34;</span>                      <span style="color:#75715e"># default: .Site.Params.info.description</span>
-<span style="color:#a6e22e">logo</span> = <span style="color:#e6db74">&#34;/images/logo.png&#34;</span>             <span style="color:#75715e"># default: &#34;/images/logo.png&#34;</span>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">23
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">24
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">25
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">26
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">27
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">28
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">29
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">30
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">31
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">32
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">33
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">34
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">35
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">36
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">37
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#6272a4"># About Widget config</span>
+[about]
+title = <span style="color:#f1fa8c">&#34;&#34;</span>                            <span style="color:#6272a4"># default: .Site.Title</span>
+description = <span style="color:#f1fa8c">&#34;&#34;</span>                      <span style="color:#6272a4"># default: .Site.Params.info.description</span>
+logo = <span style="color:#f1fa8c">&#34;/images/logo.png&#34;</span>             <span style="color:#6272a4"># default: &#34;/images/logo.png&#34;</span>
 
-<span style="color:#75715e"># Breadcrumbs Widget config</span>
-[<span style="color:#a6e22e">breadcrumbs</span>]
-<span style="color:#a6e22e">separator</span> = <span style="color:#e6db74">&#34;/&#34;</span>                      <span style="color:#75715e"># default: &#34;/&#34;</span>
-<span style="color:#a6e22e">excludeParents</span> = [<span style="color:#e6db74">&#34;page&#34;</span>]            <span style="color:#75715e"># default: [&#34;page&#34;]</span>
+<span style="color:#6272a4"># Breadcrumbs Widget config</span>
+[breadcrumbs]
+separator = <span style="color:#f1fa8c">&#34;/&#34;</span>                      <span style="color:#6272a4"># default: &#34;/&#34;</span>
+excludeParents = [<span style="color:#f1fa8c">&#34;page&#34;</span>]            <span style="color:#6272a4"># default: [&#34;page&#34;]</span>
 
-<span style="color:#75715e"># Recent Posts Widget config</span>
-[<span style="color:#a6e22e">recent_posts</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>                            <span style="color:#75715e"># default: &#34;Recent Posts&#34;</span>
-<span style="color:#a6e22e">length</span> = <span style="color:#ae81ff">4</span>                            <span style="color:#75715e"># default: 5</span>
-<span style="color:#a6e22e">excludeTypes</span> = [<span style="color:#e6db74">&#34;page&#34;</span>]               <span style="color:#75715e"># default: [&#34;page&#34;]</span>
+<span style="color:#6272a4"># Recent Posts Widget config</span>
+[recent_posts]
+title = <span style="color:#f1fa8c">&#34;&#34;</span>                            <span style="color:#6272a4"># default: &#34;Recent Posts&#34;</span>
+length = <span style="color:#bd93f9">4</span>                            <span style="color:#6272a4"># default: 5</span>
+excludeTypes = [<span style="color:#f1fa8c">&#34;page&#34;</span>]               <span style="color:#6272a4"># default: [&#34;page&#34;]</span>
 
-<span style="color:#75715e"># Search Widget config</span>
-[<span style="color:#a6e22e">search</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;Search&#34;</span>                      <span style="color:#75715e"># default: &#34;Search&#34;</span>
+<span style="color:#6272a4"># Search Widget config</span>
+[search]
+title = <span style="color:#f1fa8c">&#34;Search&#34;</span>                      <span style="color:#6272a4"># default: &#34;Search&#34;</span>
 
-<span style="color:#75715e"># Sidebar Menu Widget config</span>
-[<span style="color:#a6e22e">sidebar_menu</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>                            <span style="color:#75715e"># default: &#34;&#34;</span>
-<span style="color:#a6e22e">mirror</span> = <span style="color:#e6db74">&#34;&#34;</span>                           <span style="color:#75715e"># default: &#34;&#34;</span>
+<span style="color:#6272a4"># Sidebar Menu Widget config</span>
+[sidebar_menu]
+title = <span style="color:#f1fa8c">&#34;&#34;</span>                            <span style="color:#6272a4"># default: &#34;&#34;</span>
+mirror = <span style="color:#f1fa8c">&#34;&#34;</span>                           <span style="color:#6272a4"># default: &#34;&#34;</span>
 
-<span style="color:#75715e"># Social Menu Widget config</span>
-[<span style="color:#a6e22e">social_menu</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>                            <span style="color:#75715e"># default: &#34;&#34;</span>
-<span style="color:#a6e22e">platforms</span> = [<span style="color:#e6db74">&#34;github&#34;</span>,<span style="color:#e6db74">&#34;facebook&#34;</span>,<span style="color:#e6db74">&#34;twitter&#34;</span>,<span style="color:#e6db74">&#34;instagram&#34;</span>,<span style="color:#e6db74">&#34;email&#34;</span>,<span style="color:#e6db74">&#34;codepen&#34;</span>,<span style="color:#e6db74">&#34;gitlab&#34;</span>,<span style="color:#e6db74">&#34;linkedin&#34;</span>,<span style="color:#e6db74">&#34;telegram&#34;</span>,<span style="color:#e6db74">&#34;google_scholar&#34;</span>,<span style="color:#e6db74">&#34;youtube&#34;</span>]
+<span style="color:#6272a4"># Social Menu Widget config</span>
+[social_menu]
+title = <span style="color:#f1fa8c">&#34;&#34;</span>                            <span style="color:#6272a4"># default: &#34;&#34;</span>
+platforms = [<span style="color:#f1fa8c">&#34;github&#34;</span>,<span style="color:#f1fa8c">&#34;facebook&#34;</span>,<span style="color:#f1fa8c">&#34;twitter&#34;</span>,<span style="color:#f1fa8c">&#34;instagram&#34;</span>,<span style="color:#f1fa8c">&#34;email&#34;</span>,<span style="color:#f1fa8c">&#34;codepen&#34;</span>,<span style="color:#f1fa8c">&#34;gitlab&#34;</span>,<span style="color:#f1fa8c">&#34;linkedin&#34;</span>,<span style="color:#f1fa8c">&#34;telegram&#34;</span>,<span style="color:#f1fa8c">&#34;google_scholar&#34;</span>,<span style="color:#f1fa8c">&#34;youtube&#34;</span>]
 
-<span style="color:#75715e"># Taxonomy Cloud Widget config</span>
-[<span style="color:#a6e22e">taxonomy_cloud</span>]
-<span style="color:#a6e22e">title</span> = <span style="color:#e6db74">&#34;&#34;</span>                            <span style="color:#75715e"># default: Plural Name for `taxonomyCloud.taxonomy`</span>
-<span style="color:#a6e22e">taxonomy</span> = <span style="color:#e6db74">&#34;tags&#34;</span>                     <span style="color:#75715e"># default: &#34;tags&#34;</span>
-<span style="color:#a6e22e">shuffle</span> = <span style="color:#66d9ef">true</span>                        <span style="color:#75715e"># default: true</span>
+<span style="color:#6272a4"># Taxonomy Cloud Widget config</span>
+[taxonomy_cloud]
+title = <span style="color:#f1fa8c">&#34;&#34;</span>                            <span style="color:#6272a4"># default: Plural Name for `taxonomyCloud.taxonomy`</span>
+taxonomy = <span style="color:#f1fa8c">&#34;tags&#34;</span>                     <span style="color:#6272a4"># default: &#34;tags&#34;</span>
+shuffle = <span style="color:#ff79c6">true</span>                        <span style="color:#6272a4"># default: true</span>
 
-</code></pre></div>
+</code></pre></td></tr></table>
+</div>
+</div>
 <p>If configuration for any Widgets are missing in this file, Minimo will fallback to the default configuration for those Widgets.</p>
 <p>Go wild!</p>
 
@@ -526,3 +591,7 @@ Widget: About  about [Map]:  title [String]: Title'>
 
 </html>
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>

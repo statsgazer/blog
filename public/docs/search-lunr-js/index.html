@@ -3,14 +3,14 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Configure Lunr.js Search Client Select Lunr.js as the search client in your config.toml file:
-[params.search] client = &#34;lunr&#34; Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
+1 2  [params.search] client = &#34;lunr&#34;   Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
 Minimo comes with a script for generating the search index for Lunr.js: /scripts/generate-search-index-lunr.js.
 Install Dependencies Node.js must be installed on your system for using the generator script.'>
 <meta name='theme-color' content='#f35948'>
 
 <meta property='og:title' content='Search: Lunr.js • Munif Tanjim'>
 <meta property='og:description' content='Configure Lunr.js Search Client Select Lunr.js as the search client in your config.toml file:
-[params.search] client = &#34;lunr&#34; Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
+1 2  [params.search] client = &#34;lunr&#34;   Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
 Minimo comes with a script for generating the search index for Lunr.js: /scripts/generate-search-index-lunr.js.
 Install Dependencies Node.js must be installed on your system for using the generator script.'>
 <meta property='og:url' content='/docs/search-lunr-js/'>
@@ -51,7 +51,7 @@ Install Dependencies Node.js must be installed on your system for using the gene
       </a>
     </h2>
     <div class='desc'>
-    Mostly hexagon stickers. Some #Rstats
+    Mostly hexstickers. Some #Rstats
     </div>
   </header>
 
@@ -101,6 +101,8 @@ Install Dependencies Node.js must be installed on your system for using the gene
       </li><li>
         <a href='/tags/fuse.js/' style='font-size:1em'>fuse.js</a>
       </li><li>
+        <a href='/tags/ggplot/' style='font-size:1em'>ggplot</a>
+      </li><li>
         <a href='/tags/i18n/' style='font-size:1em'>i18n</a>
       </li><li>
         <a href='/tags/katex/' style='font-size:1em'>katex</a>
@@ -118,6 +120,8 @@ Install Dependencies Node.js must be installed on your system for using the gene
         <a href='/tags/r-markdown/' style='font-size:1em'>R Markdown</a>
       </li><li>
         <a href='/tags/regression/' style='font-size:1em'>regression</a>
+      </li><li>
+        <a href='/tags/rstats/' style='font-size:1em'>Rstats</a>
       </li><li>
         <a href='/tags/search/' style='font-size:1.5em'>search</a>
       </li><li>
@@ -181,7 +185,7 @@ Install Dependencies Node.js must be installed on your system for using the gene
 
       <header id='header' class='header site-header'>
         <div class='container sep-after'>
-          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexagon stickers. Some #Rstats</p>
+          <div class='header-info'><p class='site-title title'>stats::gazeR</p><p class='desc site-desc'>Mostly hexstickers. Some #Rstats</p>
           </div>
         </div>
       </header>
@@ -257,9 +261,17 @@ One min read
   <div class='container entry-content'>
   <h2 id="configure-lunrjs-search-client">Configure Lunr.js Search Client</h2>
 <p>Select Lunr.js as the search client in your <code>config.toml</code> file:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>]
-<span style="color:#a6e22e">client</span> = <span style="color:#e6db74">&#34;lunr&#34;</span>
-</code></pre></div><h2 id="generate-search-index-for-lunrjs">Generate Search Index for Lunr.js</h2>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.search]
+client = <span style="color:#f1fa8c">&#34;lunr&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="generate-search-index-for-lunrjs">Generate Search Index for Lunr.js</h2>
 <p>Lunr.js will need a search index for searching across your site. So, you'll need to generate that search index for Lunr.js before you deploy your site.</p>
 <p>Minimo comes with a script for generating the search index for Lunr.js: <code>/scripts/generate-search-index-lunr.js</code>.</p>
 <h3 id="install-dependencies">Install Dependencies</h3>
@@ -270,17 +282,45 @@ One min read
 <li><code>lunr</code></li>
 </ul>
 <p>For installing <code>lunr</code> and <code>glob</code> globally use the following command:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g lunr glob
-</code></pre></div><h3 id="run-the-script">Run the Script</h3>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g lunr glob
+</code></pre></td></tr></table>
+</div>
+</div><h3 id="run-the-script">Run the Script</h3>
 <p>After you've generated your site with Hugo, run <code>generate-search-index-lunr.js</code> with <code>node</code>.</p>
 <p>If Minimo is installed under <code>/themes/minimo</code> directory, you'll run it as:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-lunr.js
-</code></pre></div><p>The <code>generate-search-index-lunr.js</code> script accepts an optional argument for Hugo's <code>publishDir</code> (<em>relative to your site's root directory</em>).</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-lunr.js
+</code></pre></td></tr></table>
+</div>
+</div><p>The <code>generate-search-index-lunr.js</code> script accepts an optional argument for Hugo's <code>publishDir</code> (<em>relative to your site's root directory</em>).</p>
 <p>So, if you've got a different <code>publishDir</code> (say <code>site</code>), pass it as the first argument:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-lunr.js site
-</code></pre></div><p>If the generation was successful, you'll see output like this:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Lunr.js Index Generated <span style="color:#66d9ef">for</span>: /search/index.json
-</code></pre></div><p>That's all. Now you can deploy your site.</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-lunr.js site
+</code></pre></td></tr></table>
+</div>
+</div><p>If the generation was successful, you'll see output like this:</p>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">Lunr.js Index Generated <span style="color:#ff79c6">for</span>: /search/index.json
+</code></pre></td></tr></table>
+</div>
+</div><p>That's all. Now you can deploy your site.</p>
 
 </div>
 
@@ -363,3 +403,7 @@ One min read
 
 </html>
 
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
