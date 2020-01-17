@@ -1,9 +1,10 @@
-baseURL = "http://www.example.com"
+baseurl = "/"
 title = "stats::gazeR"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
 theme = "minimo"
+layoutdir = "layouts"
 
 disqusShortname = ""
 googleAnalytics = ""
@@ -142,16 +143,3 @@ hrefTargetBlank = true
 lang = "en"
 languageName = "English"
 weight = 1
-
-
-[markup]
-  [markup.highlight]
-    codeFences = true
-    guessSyntax = false
-    hl_Lines = ""
-    lineNoStart = 1
-    lineNos = true
-    lineNumbersInTable = true
-    noClasses = true
-    style = "dracula"
-    tabWidth = 4
