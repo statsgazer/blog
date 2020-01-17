@@ -10,15 +10,31 @@
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
     font-weight: 700;
     line-height: 1.2;
-    color: #37474f;
+    color: #282a36;
 }
 
 /* Changes hard-coded px width, check here: https://github.com/cgpu/epuRate/commit/2e1c7d494eb05e6d89f4659f9b3d7b194e35e518#diff-2a35cc1e246b04c7c153579138c0d56f */
 .container {
-    max-width: 85%;
+    max-width: 95%;
     }
 
 /*  Deletes Double Head Lines, check here: https://www.adventuremeng.com/post/several-ways-of-tweaking-the-minimo-theme-for-hugo/ */
 .header-widgets {
     display: none;
   }
+
+/* Changing hard black to blue hued */
+a {
+    color: #282a36;
+    text-decoration: none;
+    transition: color .1s ease-in-out;
+}
+
+.content {
+    font-size: 19px;
+    line-height: 1.8;
+  }
+
+code, kbd, samp, var {
+    font-size: calc(1px + 0.8vw);
+}
