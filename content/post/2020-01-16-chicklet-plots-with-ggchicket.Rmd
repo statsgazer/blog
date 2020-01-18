@@ -3,6 +3,9 @@ title: Chicklet plots with {ggchicket}
 author: cgpu
 date: '2020-01-16'
 slug: chicklet-plots-with-ggchicket
+bookdown::gitbook:
+  includes:
+    in_header: "extra.html"
 categories:
   - R
 tags:
@@ -13,19 +16,21 @@ mathjax: true
 ---
 
 
-# Customises rough around the dges barplots with `{ggchicklet}`
+# Customises rough around the dges barplots with ggchicklet :package:
 
 \begin{align}
     r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
 \end{align}
 
-```{r}
+```{r, fig.align = 'center', warning=FALSE,message=FALSE}
 library(ggplot2)
 library(plotly)
 library(dplyr)
 library(ggchicklet)
 
-movies <- read.csv("https://raw.githubusercontent.com/cgpu/12-12-2019-ggplot2-workshop/master/exercises/data/movie_metadata.csv")
+movies <- read.csv(paste0("https://raw.githubusercontent.com/", 
+                          "cgpu/12-12-2019-ggplot2-workshop/",
+                          "master/exercises/data/movie_metadata.csv"))
 
 movies_actors <- movies%>%
     group_by(aktor=actor_1_name)%>%

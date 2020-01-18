@@ -3,6 +3,9 @@ title: Chicklet plots with {ggchicket}
 author: cgpu
 date: '2020-01-16'
 slug: chicklet-plots-with-ggchicket
+bookdown::gitbook:
+  includes:
+    in_header: "extra.html"
 categories:
   - R
 tags:
@@ -14,36 +17,19 @@ mathjax: true
 
 
 
-<div id="customises-rough-around-the-dges-barplots-with-ggchicklet" class="section level1">
-<h1>Customises rough around the dges barplots with <code>{ggchicklet}</code></h1>
+<div id="customises-rough-around-the-dges-barplots-with-ggchicklet-package" class="section level1">
+<h1>Customises rough around the dges barplots with ggchicklet :package:</h1>
 <p><span class="math display">\[\begin{align}
     r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
 \end{align}\]</span></p>
 <pre class="r"><code>library(ggplot2)
-library(plotly)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;plotly&#39;</code></pre>
-<pre><code>## The following object is masked from &#39;package:ggplot2&#39;:
-## 
-##     last_plot</code></pre>
-<pre><code>## The following object is masked from &#39;package:stats&#39;:
-## 
-##     filter</code></pre>
-<pre><code>## The following object is masked from &#39;package:graphics&#39;:
-## 
-##     layout</code></pre>
-<pre class="r"><code>library(dplyr)</code></pre>
-<pre><code>## 
-## Attaching package: &#39;dplyr&#39;</code></pre>
-<pre><code>## The following objects are masked from &#39;package:stats&#39;:
-## 
-##     filter, lag</code></pre>
-<pre><code>## The following objects are masked from &#39;package:base&#39;:
-## 
-##     intersect, setdiff, setequal, union</code></pre>
-<pre class="r"><code>library(ggchicklet)
+library(plotly)
+library(dplyr)
+library(ggchicklet)
 
-movies &lt;- read.csv(&quot;https://raw.githubusercontent.com/cgpu/12-12-2019-ggplot2-workshop/master/exercises/data/movie_metadata.csv&quot;)
+movies &lt;- read.csv(paste0(&quot;https://raw.githubusercontent.com/&quot;, 
+                          &quot;cgpu/12-12-2019-ggplot2-workshop/&quot;,
+                          &quot;master/exercises/data/movie_metadata.csv&quot;))
 
 movies_actors &lt;- movies%&gt;%
     group_by(aktor=actor_1_name)%&gt;%
@@ -97,5 +83,5 @@ ggplt &lt;- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc),
 
 
 ggplt</code></pre>
-<p><img src="/post/2020-01-16-chicklet-plots-with-ggchicket_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
+<p><img src="/post/2020-01-16-chicklet-plots-with-ggchicket_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
 </div>

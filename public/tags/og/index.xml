@@ -18,7 +18,7 @@
       <guid>/docs/opengraph/</guid>
       <description>Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&amp;rsquo; front-matters &amp;amp; Hugo configuration.
 You can use these options in you content&#39;s front-matter:
-1 2 3 4 5  --- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---    audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
+--- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.</description>
     </item>
     
   </channel>

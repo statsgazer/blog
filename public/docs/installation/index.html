@@ -276,47 +276,18 @@ Install Minimo as clone With this method, you will simply clone it. And a copy o
 <p><em>The second method is recommended.</em></p>
 <h4 id="install-minimo-as-clone">Install Minimo as clone</h4>
 <p>With this method, you will simply clone it. And a copy of Minimo's repository will be stored with the rest of you site. Enter the following command for cloning Minimo:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --depth <span style="color:#bd93f9">1</span> https://github.com/MunifTanjim/minimo themes/minimo
-</code></pre></td></tr></table>
-</div>
-</div><h4 id="install-minimo-as-submodule">Install Minimo as submodule</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --depth <span style="color:#ae81ff">1</span> https://github.com/MunifTanjim/minimo themes/minimo
+</code></pre></div><h4 id="install-minimo-as-submodule">Install Minimo as submodule</h4>
 <p>This method doesn't store a copy of Minimo's repository inside your site's repository. Rather it adds Minimo as a dependency. Start by this command:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule add https://github.com/MunifTanjim/minimo themes/minimo
-</code></pre></td></tr></table>
-</div>
-</div><p>This will add Minimo's repository as a submodule to your site's repository. Now, you will have to pull the theme:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule init
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule add https://github.com/MunifTanjim/minimo themes/minimo
+</code></pre></div><p>This will add Minimo's repository as a submodule to your site's repository. Now, you will have to pull the theme:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git submodule init
 git submodule update
-</code></pre></td></tr></table>
-</div>
-</div><p>That's all, Minimo is ready to be used.</p>
+</code></pre></div><p>That's all, Minimo is ready to be used.</p>
 <h2 id="configuration-for-minimo">Configuration for Minimo</h2>
 <p>For getting started with Minimo, copy the <strong><code>config.toml</code></strong> file from the <strong><code>exampleSite</code></strong> directory inside Minimo's repository to your site repository:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cp themes/minimo/exampleSite/config.toml .
-</code></pre></td></tr></table>
-</div>
-</div><p>You can take a look at the <a href="/docs/config-file/"><strong><code>config.toml</code></strong> file</a> of this site.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cp themes/minimo/exampleSite/config.toml .
+</code></pre></div><p>You can take a look at the <a href="/docs/config-file/"><strong><code>config.toml</code></strong> file</a> of this site.</p>
 <p>Now, you can start editing this file and change the configuration!</p>
 <h3 id="setting-up-authors">Setting up Authors</h3>
 <p>Follow the <a href="/docs/authors/">Authors Setup Guide</a> for setting up authors for you site.</p>
@@ -391,13 +362,41 @@ git submodule update
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
 
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+
+    
+    function toggle_R() {
+      var x = document.getElementsByClassName('r');
+      if (x.length == 0) return;
+      function toggle_vis(o) {
+        var d = o.style.display;
+        o.style.display = (d == 'block' || d == '') ? 'none':'block';
+      }
+    
+      for (i = 0; i < x.length; i++) {
+        var y = x[i];
+        if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+      }
+    
+        var elem = document.getElementById("myButton1");
+        if (elem.value === "Make R code vanish 🎩🐇") elem.value = "Show me the code 🤔 ";
+        else elem.value = "Make R code vanish 🎩🐇";
+    }
+    
+    document.write('<input onclick="toggle_R();" type="button" value="Make R code vanish 🎩🐇" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+    
+    </script>
 </body>
 
 </html>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>

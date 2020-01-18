@@ -16,8 +16,8 @@
       <pubDate>Thu, 16 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>/post/chicklet-plots-with-ggchicket/</guid>
-      <description>Customises rough around the dges barplots with {ggchicklet} \[\begin{align} r = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y} \end{align}\]
-library(ggplot2) library(plotly) ## ## Attaching package: &amp;#39;plotly&amp;#39; ## The following object is masked from &amp;#39;package:ggplot2&amp;#39;: ## ## last_plot ## The following object is masked from &amp;#39;package:stats&amp;#39;: ## ## filter ## The following object is masked from &amp;#39;package:graphics&amp;#39;: ## ## layout library(dplyr) ## ## Attaching package: &amp;#39;dplyr&amp;#39; ## The following objects are masked from &amp;#39;package:stats&amp;#39;: ## ## filter, lag ## The following objects are masked from &amp;#39;package:base&amp;#39;: ## ## intersect, setdiff, setequal, union library(ggchicklet) movies &amp;lt;- read.</description>
+      <description>Customises rough around the dges barplots with ggchicklet 📦 \[\begin{align} r = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y} \end{align}\]
+library(ggplot2) library(plotly) library(dplyr) library(ggchicklet) movies &amp;lt;- read.csv(paste0(&amp;quot;https://raw.githubusercontent.com/&amp;quot;, &amp;quot;cgpu/12-12-2019-ggplot2-workshop/&amp;quot;, &amp;quot;master/exercises/data/movie_metadata.csv&amp;quot;)) movies_actors &amp;lt;- movies%&amp;gt;% group_by(aktor=actor_1_name)%&amp;gt;% summarise(ilosc=n())%&amp;gt;% arrange(desc(ilosc))%&amp;gt;% head(15) ggplt &amp;lt;- ggplot(movies_actors,aes(x = reorder(aktor,ilosc), y = ilosc, fill = ilosc)) + geom_chicklet(size = 0.30, width = 0.85, radius = unit(0.30, &amp;quot;cm&amp;quot;)) + theme(text = element_text( color = &amp;quot;#4A637B&amp;quot;, face = &amp;quot;bold&amp;quot;, family = &amp;#39;Helvetica&amp;#39;) ,plot.</description>
     </item>
     
     <item>

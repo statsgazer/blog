@@ -3,15 +3,15 @@
   <meta charset='utf-8'>
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Configure Algolia Search Client Select Algolia as the search client in your config.toml file:
-1 2  [params.search] client = &#34;algolia&#34;   Also, add configuration options for Algolia:
-1 2 3 4  [params.search.algolia] appId = &#34;&#34; indexName = &#34;&#34; searchApiKey = &#34;&#34;    params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
+[params.search] client = &#34;algolia&#34; Also, add configuration options for Algolia:
+[params.search.algolia] appId = &#34;&#34; indexName = &#34;&#34; searchApiKey = &#34;&#34;  params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
 default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#39;ll find various information related to your Algolia account in the Algolia Dashboard.'>
 <meta name='theme-color' content='#f35948'>
 
 <meta property='og:title' content='Search: Algolia • Munif Tanjim'>
 <meta property='og:description' content='Configure Algolia Search Client Select Algolia as the search client in your config.toml file:
-1 2  [params.search] client = &#34;algolia&#34;   Also, add configuration options for Algolia:
-1 2 3 4  [params.search.algolia] appId = &#34;&#34; indexName = &#34;&#34; searchApiKey = &#34;&#34;    params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
+[params.search] client = &#34;algolia&#34; Also, add configuration options for Algolia:
+[params.search.algolia] appId = &#34;&#34; indexName = &#34;&#34; searchApiKey = &#34;&#34;  params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
 default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#39;ll find various information related to your Algolia account in the Algolia Dashboard.'>
 <meta property='og:url' content='/docs/search-algolia/'>
 <meta property='og:site_name' content='stats::gazeR'>
@@ -262,32 +262,14 @@ default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#
   <div class='container entry-content'>
   <h2 id="configure-algolia-search-client">Configure Algolia Search Client</h2>
 <p>Select Algolia as the search client in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.search]
-client = <span style="color:#f1fa8c">&#34;algolia&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><p>Also, add configuration options for Algolia:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.search.algolia]
-appId = <span style="color:#f1fa8c">&#34;&#34;</span>
-indexName = <span style="color:#f1fa8c">&#34;&#34;</span>
-searchApiKey = <span style="color:#f1fa8c">&#34;&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>]
+<span style="color:#a6e22e">client</span> = <span style="color:#e6db74">&#34;algolia&#34;</span>
+</code></pre></div><p>Also, add configuration options for Algolia:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">search</span>.<span style="color:#a6e22e">algolia</span>]
+<span style="color:#a6e22e">appId</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">indexName</span> = <span style="color:#e6db74">&#34;&#34;</span>
+<span style="color:#a6e22e">searchApiKey</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</code></pre></div><ul>
 <li><code>params.search.algolia</code> [<code>Map</code>]:
 <ul>
 <li><code>appId</code> [<code>String</code>]: Algolia Application ID</li>
@@ -309,15 +291,8 @@ searchApiKey = <span style="color:#f1fa8c">&#34;&#34;</span>
 <li><code>glob</code></li>
 </ul>
 <p>For installing <code>algoliasearch</code> and <code>glob</code> globally use the following command:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g algoliasearch glob
-</code></pre></td></tr></table>
-</div>
-</div><h3 id="set-environment-variables">Set Environment Variables</h3>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">npm install -g algoliasearch glob
+</code></pre></div><h3 id="set-environment-variables">Set Environment Variables</h3>
 <p>The generator script uses the following environment variables:</p>
 <ul>
 <li><code>ALGOLIA_APP_ID</code> (<code>required</code>): Algolia Application ID</li>
@@ -328,25 +303,11 @@ searchApiKey = <span style="color:#f1fa8c">&#34;&#34;</span>
 <h3 id="run-the-script">Run the Script</h3>
 <p>After you've generated your site with Hugo, run <code>generate-search-index-algolia.js</code> with <code>node</code>.</p>
 <p>If Minimo is installed under <code>/themes/minimo</code> directory, you'll run it as:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-algolia.js
-</code></pre></td></tr></table>
-</div>
-</div><p>The <code>generate-search-index-algolia.js</code> script accepts an optional argument for Hugo's <code>publishDir</code> (<em>relative to your site's root directory</em>).</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-algolia.js
+</code></pre></div><p>The <code>generate-search-index-algolia.js</code> script accepts an optional argument for Hugo's <code>publishDir</code> (<em>relative to your site's root directory</em>).</p>
 <p>So, if you've got a different <code>publishDir</code> (say <code>site</code>), pass it as the first argument:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-algolia.js site
-</code></pre></td></tr></table>
-</div>
-</div><p>If the generation was successful, you'll see output like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">node ./themes/minimo/scripts/generate-search-index-algolia.js site
+</code></pre></div><p>If the generation was successful, you'll see output like this:</p>
 <pre><code>Algolia Index Generated for: /search/index.json
 </code></pre><p>That's all. Now you can deploy your site.</p>
 
@@ -425,13 +386,41 @@ searchApiKey = <span style="color:#f1fa8c">&#34;&#34;</span>
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
 
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+
+    
+    function toggle_R() {
+      var x = document.getElementsByClassName('r');
+      if (x.length == 0) return;
+      function toggle_vis(o) {
+        var d = o.style.display;
+        o.style.display = (d == 'block' || d == '') ? 'none':'block';
+      }
+    
+      for (i = 0; i < x.length; i++) {
+        var y = x[i];
+        if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+      }
+    
+        var elem = document.getElementById("myButton1");
+        if (elem.value === "Make R code vanish 🎩🐇") elem.value = "Show me the code 🤔 ";
+        else elem.value = "Make R code vanish 🎩🐇";
+    }
+    
+    document.write('<input onclick="toggle_R();" type="button" value="Make R code vanish 🎩🐇" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+    
+    </script>
 </body>
 
 </html>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>

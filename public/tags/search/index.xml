@@ -17,7 +17,7 @@
       
       <guid>/docs/search-fuse-js/</guid>
       <description>Configure Fuse.js Search Client Select Fuse.js as the search client in your config.toml file:
-1 2  [params.search] client = &amp;#34;fuse&amp;#34;   </description>
+[params.search] client = &amp;#34;fuse&amp;#34; </description>
     </item>
     
     <item>
@@ -27,8 +27,8 @@
       
       <guid>/docs/search-algolia/</guid>
       <description>Configure Algolia Search Client Select Algolia as the search client in your config.toml file:
-1 2  [params.search] client = &amp;#34;algolia&amp;#34;   Also, add configuration options for Algolia:
-1 2 3 4  [params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;    params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
+[params.search] client = &amp;#34;algolia&amp;#34; Also, add configuration options for Algolia:
+[params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;  params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
 default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#39;ll find various information related to your Algolia account in the Algolia Dashboard.</description>
     </item>
     
@@ -39,7 +39,7 @@ default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#
       
       <guid>/docs/search-lunr-js/</guid>
       <description>Configure Lunr.js Search Client Select Lunr.js as the search client in your config.toml file:
-1 2  [params.search] client = &amp;#34;lunr&amp;#34;   Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
+[params.search] client = &amp;#34;lunr&amp;#34; Generate Search Index for Lunr.js Lunr.js will need a search index for searching across your site. So, you&#39;ll need to generate that search index for Lunr.js before you deploy your site.
 Minimo comes with a script for generating the search index for Lunr.js: /scripts/generate-search-index-lunr.js.
 Install Dependencies Node.js must be installed on your system for using the generator script.</description>
     </item>

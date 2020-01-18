@@ -4,13 +4,13 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&rsquo; front-matters &amp; Hugo configuration.
 You can use these options in you content&#39;s front-matter:
-1 2 3 4 5  --- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---    audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.'>
+--- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.'>
 <meta name='theme-color' content='#f35948'>
 
 <meta property='og:title' content='Opengraph Support • Munif Tanjim'>
 <meta property='og:description' content='Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&rsquo; front-matters &amp; Hugo configuration.
 You can use these options in you content&#39;s front-matter:
-1 2 3 4 5  --- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---    audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.'>
+--- audios: [] # for og:audio tags images: [] # for og:image tags videos: [] # for og:video tags ---  audios [Array of Strings]: path/url of audio files images [Array of Strings]: path/url of image files videos [Array of Strings]: path/url of video files  N.'>
 <meta property='og:url' content='/docs/opengraph/'>
 <meta property='og:site_name' content='stats::gazeR'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/058944a54775b387da964cb3cc3670ff?s=256'><meta property='article:author' content='https://facebook.com/MunifTanjim'><meta property='article:section' content='docs'><meta property='article:tag' content='og'><meta property='article:published_time' content='2017-09-26T08:00:00&#43;06:00'/><meta property='article:modified_time' content='2017-10-11T18:00:00&#43;06:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@MunifTanjim'>
@@ -242,23 +242,12 @@ You can use these options in you content&#39;s front-matter:
   <div class='container entry-content'>
   <p>Minimo has built-in support for Opengraph tags. It will pick up most of the things from your contents&rsquo; front-matters &amp; Hugo configuration.</p>
 <p>You can use these options in you content's front-matter:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-audios: []  <span style="color:#6272a4"># for og:audio tags</span>
-images: []  <span style="color:#6272a4"># for og:image tags</span>
-videos: []  <span style="color:#6272a4"># for og:video tags</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+audios: []  <span style="color:#75715e"># for og:audio tags</span>
+images: []  <span style="color:#75715e"># for og:image tags</span>
+videos: []  <span style="color:#75715e"># for og:video tags</span>
 ---
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+</code></pre></div><ul>
 <li><code>audios</code> [<code>Array</code> of <code>String</code>s]: path/url of audio files</li>
 <li><code>images</code> [<code>Array</code> of <code>String</code>s]: path/url of image files</li>
 <li><code>videos</code> [<code>Array</code> of <code>String</code>s]: path/url of video files</li>
@@ -267,21 +256,11 @@ videos: []  <span style="color:#6272a4"># for og:video tags</span>
 <p>If you add <a href="/docs/cover-image/"><strong>Cover Image</strong></a> to you content, it will also be picked up.</p>
 <h2 id="facebook-opengraph">Facebook Opengraph</h2>
 <p>You can set these options in your <code>config.toml</code> files for better integration with Facebook:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.opengraph.facebook]
-admins = []  <span style="color:#6272a4"># for fb:admins tags</span>
-appID  = <span style="color:#f1fa8c">&#34;&#34;</span>  <span style="color:#6272a4"># for fb:app_id tag</span>
-pageID = <span style="color:#f1fa8c">&#34;&#34;</span>  <span style="color:#6272a4"># for article:publisher tag</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">opengraph</span>.<span style="color:#a6e22e">facebook</span>]
+<span style="color:#a6e22e">admins</span> = []  <span style="color:#75715e"># for fb:admins tags</span>
+<span style="color:#a6e22e">appID</span>  = <span style="color:#e6db74">&#34;&#34;</span>  <span style="color:#75715e"># for fb:app_id tag</span>
+<span style="color:#a6e22e">pageID</span> = <span style="color:#e6db74">&#34;&#34;</span>  <span style="color:#75715e"># for article:publisher tag</span>
+</code></pre></div><ul>
 <li><code>admins</code> [<code>Array</code> of <code>String</code>s]: Facebook Profile IDs</li>
 <li><code>appID</code> [<code>String</code>]: Facebook Application ID</li>
 <li><code>pageid</code> [<code>String</code>]: Facebook Page ID</li>
@@ -290,17 +269,9 @@ pageID = <span style="color:#f1fa8c">&#34;&#34;</span>  <span style="color:#6272
 <h2 id="twitter-cards">Twitter Cards</h2>
 <p>Minimo has built-in support for <a href="https://developer.twitter.com/en/docs/tweets/optimize-with-cards/overview/abouts-cards">Twitter Cards</a>.</p>
 <p>You can set these options in your <code>config.toml</code> files to provide additional information for Twitter Cards:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.opengraph.twitter]
-page = <span style="color:#f1fa8c">&#34;&#34;</span> <span style="color:#6272a4"># for twitter:site tag</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">opengraph</span>.<span style="color:#a6e22e">twitter</span>]
+<span style="color:#a6e22e">page</span> = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e"># for twitter:site tag</span>
+</code></pre></div><ul>
 <li><code>page</code> [<code>String</code>]: Twitter Page's Username</li>
 </ul>
 <p>Also, the <code>[social.twitter]</code> field from the <a href="/docs/authors/#author-s-profile">Author's Profile</a> data is used for <code>twitter:creator</code> tag.</p>
@@ -388,13 +359,41 @@ page = <span style="color:#f1fa8c">&#34;&#34;</span> <span style="color:#6272a4"
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
 
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+
+    
+    function toggle_R() {
+      var x = document.getElementsByClassName('r');
+      if (x.length == 0) return;
+      function toggle_vis(o) {
+        var d = o.style.display;
+        o.style.display = (d == 'block' || d == '') ? 'none':'block';
+      }
+    
+      for (i = 0; i < x.length; i++) {
+        var y = x[i];
+        if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+      }
+    
+        var elem = document.getElementById("myButton1");
+        if (elem.value === "Make R code vanish 🎩🐇") elem.value = "Show me the code 🤔 ";
+        else elem.value = "Make R code vanish 🎩🐇";
+    }
+    
+    document.write('<input onclick="toggle_R();" type="button" value="Make R code vanish 🎩🐇" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+    
+    </script>
 </body>
 
 </html>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>

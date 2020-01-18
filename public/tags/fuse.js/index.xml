@@ -17,7 +17,7 @@
       
       <guid>/docs/search-fuse-js/</guid>
       <description>Configure Fuse.js Search Client Select Fuse.js as the search client in your config.toml file:
-1 2  [params.search] client = &amp;#34;fuse&amp;#34;   </description>
+[params.search] client = &amp;#34;fuse&amp;#34; </description>
     </item>
     
   </channel>

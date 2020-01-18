@@ -406,13 +406,41 @@
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
 
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+
+    
+    function toggle_R() {
+      var x = document.getElementsByClassName('r');
+      if (x.length == 0) return;
+      function toggle_vis(o) {
+        var d = o.style.display;
+        o.style.display = (d == 'block' || d == '') ? 'none':'block';
+      }
+    
+      for (i = 0; i < x.length; i++) {
+        var y = x[i];
+        if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+      }
+    
+        var elem = document.getElementById("myButton1");
+        if (elem.value === "Make R code vanish 🎩🐇") elem.value = "Show me the code 🤔 ";
+        else elem.value = "Make R code vanish 🎩🐇";
+    }
+    
+    document.write('<input onclick="toggle_R();" type="button" value="Make R code vanish 🎩🐇" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+    
+    </script>
 </body>
 
 </html>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>

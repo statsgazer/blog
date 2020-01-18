@@ -4,15 +4,15 @@
 <meta name='viewport' content='width=device-width, initial-scale=1'>
 <meta name='description' content='Minimo has support for comments baked into it.
 Enable/Disable Comments Globally For enabling or disabling comments globally, check the following setting in your config.toml file:
-1 2  [params.comments] enable = false    params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
-1 2 3  --- comments: true ---    comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).'>
+[params.comments] enable = false  params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
+--- comments: true ---  comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).'>
 <meta name='theme-color' content='#f35948'>
 
 <meta property='og:title' content='Comments Support • Munif Tanjim'>
 <meta property='og:description' content='Minimo has support for comments baked into it.
 Enable/Disable Comments Globally For enabling or disabling comments globally, check the following setting in your config.toml file:
-1 2  [params.comments] enable = false    params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
-1 2 3  --- comments: true ---    comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).'>
+[params.comments] enable = false  params.comments [Map]:  enable [Boolean]: Enable/Disable comments globally    For Specific Posts The global .Site.Params.comments.enable setting can be overridden for specific posts in their content&#39;s frontmatter with this option:
+--- comments: true ---  comments [Boolean]: Enable/Disable comments for specific posts  Of course, you&#39;ll also need to setup a comment system ( Disqus or Staticman ).'>
 <meta property='og:url' content='/docs/comments-support/'>
 <meta property='og:site_name' content='stats::gazeR'>
 <meta property='og:type' content='article'><meta property='og:image' content='https://www.gravatar.com/avatar/058944a54775b387da964cb3cc3670ff?s=256'><meta property='article:author' content='https://facebook.com/MunifTanjim'><meta property='article:section' content='docs'><meta property='article:tag' content='config'><meta property='article:published_time' content='2018-03-29T09:00:00&#43;06:00'/><meta property='article:modified_time' content='2019-07-12T23:00:00&#43;06:00'/><meta name='twitter:card' content='summary'><meta name='twitter:creator' content='@MunifTanjim'>
@@ -270,17 +270,9 @@ Enable/Disable Comments Globally For enabling or disabling comments globally, ch
 <h2 id="enabledisable-comments">Enable/Disable Comments</h2>
 <h3 id="globally">Globally</h3>
 <p>For enabling or disabling comments globally, check the following setting in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.comments]
-enable = <span style="color:#ff79c6">false</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">comments</span>]
+<span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">false</span>
+</code></pre></div><ul>
 <li><code>params.comments</code> [<code>Map</code>]:
 <ul>
 <li><code>enable</code> [<code>Boolean</code>]: Enable/Disable comments globally</li>
@@ -289,19 +281,10 @@ enable = <span style="color:#ff79c6">false</span>
 </ul>
 <h3 id="for-specific-posts">For Specific Posts</h3>
 <p>The global <code>.Site.Params.comments.enable</code> setting can be overridden for specific posts in their content's frontmatter with this option:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
-comments: <span style="color:#ff79c6">true</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yaml" data-lang="yaml">---
+comments: <span style="color:#66d9ef">true</span>
 ---
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+</code></pre></div><ul>
 <li><code>comments</code> [<code>Boolean</code>]: Enable/Disable comments for specific posts</li>
 </ul>
 <p><em>Of course, you'll also need to setup a comment system ( <a href="#disqus">Disqus</a> or <a href="#staticman">Staticman</a> ).</em></p>
@@ -309,35 +292,18 @@ comments: <span style="color:#ff79c6">true</span>
 <p>Minimo currently supports <strong><a href="https://disqus.com/">Disqus</a></strong>, <strong><a href="https://posativ.org/isso/">Isso</a></strong>, <strong><a href="https://staticman.net/">Staticman</a></strong> and <strong><a href="https://utteranc.es">Utterances</a></strong> to be used as your site's comment system.</p>
 <h3 id="disqus">Disqus</h3>
 <p>Disqus comments require you set a single value to the following option in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">disqusShortname = <span style="color:#f1fa8c">&#34;&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">disqusShortname</span> = <span style="color:#e6db74">&#34;&#34;</span>
+</code></pre></div><ul>
 <li><code>disqusShortname</code> [<code>String</code>]: Shortname for you site's Disqus account</li>
 </ul>
 <p>And that's all!</p>
 <h3 id="isso">Isso</h3>
 <p>Isso is a lightweight alternative to Disqus. You need to have a Isso server running somewhere, then set up the following options in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.comments.isso]
-enable = <span style="color:#ff79c6">true</span>
-scriptSrc = <span style="color:#f1fa8c">&#34;https://isso.example.com/js/embed.min.js&#34;</span>
-dataAttrs = <span style="color:#f1fa8c">&#34;data-isso=&#39;https://isso.example.com data-isso-require-author=&#39;true&#39;&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">comments</span>.<span style="color:#a6e22e">isso</span>]
+<span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">scriptSrc</span> = <span style="color:#e6db74">&#34;https://isso.example.com/js/embed.min.js&#34;</span>
+<span style="color:#a6e22e">dataAttrs</span> = <span style="color:#e6db74">&#34;data-isso=&#39;https://isso.example.com data-isso-require-author=&#39;true&#39;&#34;</span>
+</code></pre></div><ul>
 <li><code>params.comments.isso</code> [<code>Map</code>]:
 <ul>
 <li><code>enable</code> [<code>Boolean</code>]: Enable Isso</li>
@@ -350,25 +316,13 @@ dataAttrs = <span style="color:#f1fa8c">&#34;data-isso=&#39;https://isso.example
 <p>For up-to-date information, check out the <a href="https://staticman.net">Documentation Site</a> and the <a href="https://github.com/eduardoboucas/staticman">Public Repository</a> of Staticman.</p>
 <h4 id="configure-minimo-for-staticman">Configure Minimo for Staticman</h4>
 <p>First of all, set up the following options (with your preferred values) in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.comments.staticman]
-enable = <span style="color:#ff79c6">true</span>
-apiEndpoint = <span style="color:#f1fa8c">&#34;https://api.staticman.net/v2/entry&#34;</span>
-maxDepth = <span style="color:#bd93f9">2</span>
-username = <span style="color:#f1fa8c">&#34;MunifTanjim&#34;</span>
-repository = <span style="color:#f1fa8c">&#34;minimo&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">comments</span>.<span style="color:#a6e22e">staticman</span>]
+<span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">apiEndpoint</span> = <span style="color:#e6db74">&#34;https://api.staticman.net/v2/entry&#34;</span>
+<span style="color:#a6e22e">maxDepth</span> = <span style="color:#ae81ff">2</span>
+<span style="color:#a6e22e">username</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">repository</span> = <span style="color:#e6db74">&#34;minimo&#34;</span>
+</code></pre></div><ul>
 <li><code>params.comments.staticman</code> [<code>Map</code>]:
 <ul>
 <li><code>enable</code> [<code>Boolean</code>]: Enable Staticman</li>
@@ -382,57 +336,29 @@ repository = <span style="color:#f1fa8c">&#34;minimo&#34;</span>
 <h4 id="staticman-configuration-file">Staticman Configuration File</h4>
 <p>Next, you'll need a Staticman Configuration File (<code>staticman.yml</code>) in the root of your site's repository. Here's a sample of it:</p>
 <p><strong><code>staticman.yml</code></strong></p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">22
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">comments:
-  allowedFields: [<span style="color:#f1fa8c">&#39;author&#39;</span>, <span style="color:#f1fa8c">&#39;content&#39;</span>, <span style="color:#f1fa8c">&#39;email&#39;</span>, <span style="color:#f1fa8c">&#39;parent_id&#39;</span>, <span style="color:#f1fa8c">&#39;permalink&#39;</span>, <span style="color:#f1fa8c">&#39;site&#39;</span>]
-  branch: <span style="color:#f1fa8c">&#39;master&#39;</span>
-  commitMessage: <span style="color:#f1fa8c">&#34;add [comment]: by {fields.author} &lt;Staticman&gt;\n\n{fields.permalink}#comment-{@id}&#34;</span>
-  filename: <span style="color:#f1fa8c">&#39;{@id}&#39;</span>
-  format: <span style="color:#f1fa8c">&#39;yaml&#39;</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-yml" data-lang="yml">comments:
+  allowedFields: [<span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;content&#39;</span>, <span style="color:#e6db74">&#39;email&#39;</span>, <span style="color:#e6db74">&#39;parent_id&#39;</span>, <span style="color:#e6db74">&#39;permalink&#39;</span>, <span style="color:#e6db74">&#39;site&#39;</span>]
+  branch: <span style="color:#e6db74">&#39;master&#39;</span>
+  commitMessage: <span style="color:#e6db74">&#34;add [comment]: by {fields.author} &lt;Staticman&gt;\n\n{fields.permalink}#comment-{@id}&#34;</span>
+  filename: <span style="color:#e6db74">&#39;{@id}&#39;</span>
+  format: <span style="color:#e6db74">&#39;yaml&#39;</span>
   generatedFields:
     date:
       type: date
       options:
-        format: <span style="color:#f1fa8c">&#39;timestamp&#39;</span>
-  moderation: <span style="color:#ff79c6">false</span>
-  name: <span style="color:#f1fa8c">&#39;Minimo&#39;</span>
-  path: <span style="color:#f1fa8c">&#39;data/comments/{options.postId}&#39;</span>
-  requiredFields: [<span style="color:#f1fa8c">&#39;author&#39;</span>, <span style="color:#f1fa8c">&#39;content&#39;</span>, <span style="color:#f1fa8c">&#39;email&#39;</span>, <span style="color:#f1fa8c">&#39;permalink&#39;</span>]
+        format: <span style="color:#e6db74">&#39;timestamp&#39;</span>
+  moderation: <span style="color:#66d9ef">false</span>
+  name: <span style="color:#e6db74">&#39;Minimo&#39;</span>
+  path: <span style="color:#e6db74">&#39;data/comments/{options.postId}&#39;</span>
+  requiredFields: [<span style="color:#e6db74">&#39;author&#39;</span>, <span style="color:#e6db74">&#39;content&#39;</span>, <span style="color:#e6db74">&#39;email&#39;</span>, <span style="color:#e6db74">&#39;permalink&#39;</span>]
   reCaptcha:
-    enabled: <span style="color:#ff79c6">false</span>
-    <span style="color:#6272a4"># siteKey: &#39;&#39;</span>
-    <span style="color:#6272a4"># secret: &#39;&#39;</span>
+    enabled: <span style="color:#66d9ef">false</span>
+    <span style="color:#75715e"># siteKey: &#39;&#39;</span>
+    <span style="color:#75715e"># secret: &#39;&#39;</span>
   transforms:
     email: md5
 
-</code></pre></td></tr></table>
-</div>
-</div>
+</code></pre></div>
 <h5 id="notes">Notes</h5>
 <ul>
 <li>In most cases, you'll only need to change the <code>name</code> option (Site's name)</li>
@@ -448,27 +374,14 @@ repository = <span style="color:#f1fa8c">&#34;minimo&#34;</span>
 <h3 id="utterances">Utterances</h3>
 <p><em>Utterances only supports GitHub. So, if your site's repository is not hosted in GitHub, it won't work.</em></p>
 <p>For using Utterances, set up the following options in your <code>config.toml</code> file:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[params.comments.utterances]
-enable = <span style="color:#ff79c6">true</span>
-issueTerm = <span style="color:#f1fa8c">&#34;pathname&#34;</span> <span style="color:#6272a4"># pathname / url / title</span>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">comments</span>.<span style="color:#a6e22e">utterances</span>]
+<span style="color:#a6e22e">enable</span> = <span style="color:#66d9ef">true</span>
+<span style="color:#a6e22e">issueTerm</span> = <span style="color:#e6db74">&#34;pathname&#34;</span> <span style="color:#75715e"># pathname / url / title</span>
 
-[params.comments.utterances.github]
-username = <span style="color:#f1fa8c">&#34;MunifTanjim&#34;</span>
-repository = <span style="color:#f1fa8c">&#34;minimo&#34;</span>
-</code></pre></td></tr></table>
-</div>
-</div><ul>
+[<span style="color:#a6e22e">params</span>.<span style="color:#a6e22e">comments</span>.<span style="color:#a6e22e">utterances</span>.<span style="color:#a6e22e">github</span>]
+<span style="color:#a6e22e">username</span> = <span style="color:#e6db74">&#34;MunifTanjim&#34;</span>
+<span style="color:#a6e22e">repository</span> = <span style="color:#e6db74">&#34;minimo&#34;</span>
+</code></pre></div><ul>
 <li><code>params.comments.utterances</code> [<code>Map</code>]:
 <ul>
 <li><code>enable</code> [<code>Boolean</code>]: Enable Utterances</li>
@@ -568,13 +481,41 @@ repository = <span style="color:#f1fa8c">&#34;minimo&#34;</span>
     </div>
   </div><script>window.__assets_js_src="/assets/js/"</script>
 
-<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script>
+<script src='/assets/js/main.67d669ac.js'></script><script src='/js/custom.js'></script><link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css" rel="stylesheet">
 
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="////cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+<script type="text/javascript">
+
+    
+    function toggle_R() {
+      var x = document.getElementsByClassName('r');
+      if (x.length == 0) return;
+      function toggle_vis(o) {
+        var d = o.style.display;
+        o.style.display = (d == 'block' || d == '') ? 'none':'block';
+      }
+    
+      for (i = 0; i < x.length; i++) {
+        var y = x[i];
+        if (y.tagName.toLowerCase() === 'pre') toggle_vis(y);
+      }
+    
+        var elem = document.getElementById("myButton1");
+        if (elem.value === "Make R code vanish 🎩🐇") elem.value = "Show me the code 🤔 ";
+        else elem.value = "Make R code vanish 🎩🐇";
+    }
+    
+    document.write('<input onclick="toggle_R();" type="button" value="Make R code vanish 🎩🐇" id="myButton1" style="position: absolute; top: 10%; right: 2%; z-index: 200"></input>')
+    
+    </script>
 </body>
 
 </html>
-
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>

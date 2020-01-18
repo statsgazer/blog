@@ -17,8 +17,8 @@
       
       <guid>/docs/search-algolia/</guid>
       <description>Configure Algolia Search Client Select Algolia as the search client in your config.toml file:
-1 2  [params.search] client = &amp;#34;algolia&amp;#34;   Also, add configuration options for Algolia:
-1 2 3 4  [params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;    params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
+[params.search] client = &amp;#34;algolia&amp;#34; Also, add configuration options for Algolia:
+[params.search.algolia] appId = &amp;#34;&amp;#34; indexName = &amp;#34;&amp;#34; searchApiKey = &amp;#34;&amp;#34;  params.search.algolia [Map]:  appId [String]: Algolia Application ID indexName [String]: Name for Algolia Indices
 default: minimo_site searchApiKey [String]: Algolia Search-Only API Key    You&#39;ll find various information related to your Algolia account in the Algolia Dashboard.</description>
     </item>
     
