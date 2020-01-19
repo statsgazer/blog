@@ -17,8 +17,8 @@ mathjax: true
 
 
 
-<div id="customises-rough-around-the-dges-barplots-with-ggchicklet-package" class="section level1">
-<h1>Customises rough around the dges barplots with ggchicklet :package:</h1>
+<div id="customise-rough-around-the-edges-barplots-with-the-ggchicklet-package" class="section level1">
+<h1>Customise rough around the edges barplots with the <code>ggchicklet</code> :package:</h1>
 <p><span class="math display">\[\begin{align}
     r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
 \end{align}\]</span></p>
@@ -42,9 +42,9 @@ ggplt &lt;- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc),
                                      y     =  ilosc,
                                      fill  =  ilosc)) +
     
-            geom_chicklet(size   = 0.30,
+            geom_chicklet(size   = 0.20,
                           width   = 0.85,
-                          radius = unit(0.30, &quot;cm&quot;))  +
+                          radius = unit(0.20, &quot;cm&quot;))  +
 
             theme(text              = element_text(           color = &quot;#4A637B&quot;, face = &quot;bold&quot;, family = &#39;Helvetica&#39;)
                   ,plot.caption     = element_text(size =  9, color = &quot;#8d99ae&quot;, face = &quot;plain&quot;                     ) 
@@ -83,5 +83,5 @@ ggplt &lt;- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc),
 
 
 ggplt</code></pre>
-<p><img src="/post/2020-01-16-chicklet-plots-with-ggchicket_files/figure-html/unnamed-chunk-1-1.png" width="672" style="display: block; margin: auto;" /></p>
+<p><img src="/post/2020-01-16-chicklet-plots-with-ggchicket_files/figure-html/unnamed-chunk-1-1.png" width="100%" style="display: block; margin: auto;" /></p>
 </div>

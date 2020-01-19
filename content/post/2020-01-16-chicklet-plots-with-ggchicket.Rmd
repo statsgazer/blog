@@ -16,13 +16,13 @@ mathjax: true
 ---
 
 
-# Customises rough around the dges barplots with ggchicklet :package:
+# Customise rough around the edges barplots with the `ggchicklet` :package:
 
 \begin{align}
     r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
 \end{align}
 
-```{r, fig.align = 'center', warning=FALSE,message=FALSE}
+```{r,  out.width = "100%", fig.align = 'center', warning=FALSE,message=FALSE}
 library(ggplot2)
 library(plotly)
 library(dplyr)
@@ -43,9 +43,9 @@ ggplt <- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc),
                                      y     =  ilosc,
                                      fill  =  ilosc)) +
     
-            geom_chicklet(size   = 0.30,
+            geom_chicklet(size   = 0.20,
                           width   = 0.85,
-                          radius = unit(0.30, "cm"))  +
+                          radius = unit(0.20, "cm"))  +
 
             theme(text              = element_text(           color = "#4A637B", face = "bold", family = 'Helvetica')
                   ,plot.caption     = element_text(size =  9, color = "#8d99ae", face = "plain"                     ) 
@@ -85,3 +85,6 @@ ggplt <- ggplot(movies_actors,aes(x     =  reorder(aktor,ilosc),
 
 ggplt
 ```
+
+
+

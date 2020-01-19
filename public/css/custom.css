@@ -5,6 +5,10 @@
     --color-accent: #f35948;
 }
 
+.hljs-string, .hljs-title, .hljs-name, .hljs-type, .hljs-attribute, .hljs-symbol, .hljs-bullet, .hljs-addition, .hljs-variable, .hljs-template-tag, .hljs-template-variable {
+    color: #f35948;
+}
+
 /* Overrides hard black color with #37474f */
 .title, h1, h2, h3, h4, h5, h6 {
     font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Open Sans,Helvetica Neue,sans-serif;
@@ -38,3 +42,4 @@ a {
 code, kbd, samp, var {
     font-size: calc(1px + 0.8vw);
 }
+
