@@ -15,14 +15,13 @@ authors: []
 mathjax: true
 ---
 
-
-# Customise rough around the edges barplots with the `ggchicklet` :package:
+# Customise rough around the edges barplots with the `ggchicklet` :package: 
 
 \begin{align}
     r  = \frac{1}{n-1} \sum_{i=1}^{n} \frac{(X_i - \bar{X})(Y_i - \bar{Y})}{S_xS_y}
 \end{align}
 
-```{r,  out.width = "100%", fig.align = 'center', warning=FALSE,message=FALSE}
+```{r ggchicklet_rounded,  out.width = "100%", fig.align = 'center', warning=FALSE,message=FALSE}
 library(ggplot2)
 library(plotly)
 library(dplyr)
