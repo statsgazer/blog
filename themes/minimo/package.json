@@ -39,6 +39,6 @@
     "lunr": "^2.3.0",
     "normalize.css": "^8.0.0",
     "twemoji": "^2.5.1",
-    "url-parse": "^1.4.7"
+    "url-parse": "^1.5.9"
   }
 }
